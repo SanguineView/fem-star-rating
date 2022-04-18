@@ -6,44 +6,45 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
-  <title>Frontend Mentor | Interactive rating component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Frontend Mentor | Interactive rating component | Ryan McGuire</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Rating state start -->
 
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
-  <!-- Thank you state end -->
+  <div class="container">
+    <div id="ratingWindow">
+      <div class="stars" id="starsContainer">
+        <img src="images/icon-star.svg" alt="Star Rating">
+      </div>
+      <h2>How did we do?</h2>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <div class="ratingSelectContainer">
+        <button class="ratingSelect">1</button>
+        <button class="ratingSelect">2</button>
+        <button class="ratingSelect">3</button>
+        <button class="ratingSelect">4</button>
+        <button class="ratingSelect">5</button>
+      </div>
+      <button id="submit" class="submitButton">Submit</button>
+    </div>
+    <div id="messageWindow">
+      <img src="images/illustration-thank-you.svg" alt="Thank You">
+      <p class="choice">You selected # out of 5</p>
+      <h2>Thank you!</h2>
+      <p>We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+    </div>
+  </div>
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ryan McGuire</a>.
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
