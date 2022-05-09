@@ -455,18 +455,39 @@ button:hover {
     border-radius:25px;
 }
 
-#ratingsWindow {
-    position: absolute;
-    height:100%;
-    width:100%;
-    right:0;
-    top:0;
+.thanks {
+  margin-bottom: 25px;
+}
+
+.containerWindow {
+
+}
+
+#ratingWindow {
+    opacity:1;
+    z-index: 100;
+    transition: all 0.6s ease;
+    transform: translateX(0);
+}
+
+#ratingWindow.hide {
+    opacity:0;
+    z-index: 10;
+    transform: translateX(500%);
 }
 
 #messageWindow {
-    position: absolute;
-    height:100%;
-    width:100%;
-    right:200%;
-    top:0;
+    opacity:0;
+    z-index: 10;
+    transition: all 0.6s ease;
+    transform: translateX(-500%);
+    position:absolute;
+    top:30px;
+    left:30px;
+}
+
+#messageWindow.show {
+    opacity:1;
+    z-index: 100;
+    transform: translateX(0);
 }
