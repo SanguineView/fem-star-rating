@@ -31,7 +31,7 @@ function ratingSubmit() {
     // move rating window
     ratingWindow.classList.add('hide')
     // populate message in message window
-    document.getElementById('choiceMessage').innerText = `You selected ${rating} out of 5.`
+    document.getElementById('choiceMessage').innerText = `You selected ${rating} out of 5`
     // move message window
     messageWindow.classList.add('show')
 }
